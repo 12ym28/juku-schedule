@@ -2,16 +2,14 @@
   "name": "塾スケジュール管理",
   "short_name": "塾スケジュール",
   "description": "塾・予備校生のためのスケジュール管理ツール",
-  "start_url": "/",
+  "start_url": "/juku-schedule/",
   "display": "standalone",
   "background_color": "#f5f5f0",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
   "lang": "ja",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
-  ],
-  "categories": ["education", "productivity"],
-  "screenshots": []
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
 }
