@@ -1,64 +1,53 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#2563eb">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="塾スケジュール">
-<meta name="description" content="塾・予備校生のためのスケジュール管理ツール">
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>塾スケジュール管理</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{
-  font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Meiryo',sans-serif;
-  background:#f0f0eb;color:#1a1a1a;font-size:14px;
-  height:100vh;height:100dvh;overflow:hidden;
-}
-:root{
-  --blue:#2563eb;--green:#16a34a;--red:#dc2626;--orange:#ea580c;
-  --blue-bg:#dbeafe;--green-bg:#dcfce7;--red-bg:#fee2e2;--orange-bg:#ffedd5;
-  --border:#e2e2e2;--surface:#ffffff;--bg:#f0f0eb;
-  --text:#1a1a1a;--muted:#6b7280;--subtle:#9ca3af;
-}
+📚 塾スケジュール
+🏠
+ホーム
+🔍
+検索
+⚙️
+設定
+🗑️
+ゴミ箱
 
-/* ===== LAYOUT ===== */
-.app{display:flex;height:100vh;height:100dvh;overflow:hidden}
+v1.0.0 — データはこの端末に保存されます
+ホーム
+💾 ＋ 追加
+‹
 
-/* Sidebar - desktop */
-.sidebar{
-  width:210px;background:var(--surface);
-  border-right:1px solid var(--border);
-  display:flex;flex-direction:column;flex-shrink:0;
-}
-.sidebar-logo{
-  padding:16px 18px;font-size:17px;font-weight:700;
-  border-bottom:1px solid var(--border);letter-spacing:-0.5px;
-  display:flex;align-items:center;gap:8px;
-}
-.sidebar-logo .accent{color:var(--blue)}
-.nav-group{flex:1;padding:10px 0;overflow-y:auto}
-.nav-item{
-  display:flex;align-items:center;gap:10px;
-  padding:9px 14px;cursor:pointer;border-radius:8px;
-  margin:2px 8px;font-size:13px;font-weight:500;
-  color:var(--muted);transition:all 0.15s;
-}
-.nav-item:hover{background:#f5f5f0;color:var(--text)}
-.nav-item.active{background:var(--blue-bg);color:var(--blue)}
-.nav-icon{font-size:16px;width:20px;text-align:center;flex-shrink:0}
-.nav-badge{
-  margin-left:auto;background:#fee2e2;color:#dc2626;
-  border-radius:10px;padding:1px 7px;font-size:11px;font-weight:700;
-  min-width:20px;text-align:center;
-}
-.sidebar-footer{
-  padding:12px 18px;font-size:11px;color:var(--subtle);
-  border-top:1px solid var(--border);
-}
+› 今日
+日
+月
+火
+水
+木
+金
+土
+本日のタスク
+
+
+すべて
+✅ 完了
+❌ やり残し
+🔵 未来
+全タイプ
+📘 予習
+📗 講義
+📕 復習
+📙 任意
+
+📅 スケジュール登録
+
+＋ スケジュール追加
+⏱ タスクオフセット設定
+予習・復習を講義の何日前後に設定するか。変更後はスケジュールを再保存してください。
+タスク種別
+オフセット（日）
+
+
+＋ 予習/復習を追加
+💾 データ管理
+📤 エクスポート（JSON） 📥 インポート 🗑 全データ削除
+エクスポートしたJSONを別の端末でインポートするとデータを引き継げます
+↩ 選択を復元 ✕ 選択を完全削除 🗑 全て削除
 
 /* Main area */
 .main{flex:1;overflow:hidden;display:flex;flex-direction:column;min-width:0}
